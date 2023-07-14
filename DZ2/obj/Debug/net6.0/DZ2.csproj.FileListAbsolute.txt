@@ -1,0 +1,5 @@
+D:\Git\DZ2\obj\Debug\net6.0\DZ2.csproj.AssemblyReference.cache
+D:\Git\DZ2\obj\Debug\net6.0\DZ2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\DZ2\obj\Debug\net6.0\DZ2.AssemblyInfoInputs.cache
+D:\Git\DZ2\obj\Debug\net6.0\DZ2.AssemblyInfo.cs
+D:\Git\DZ2\obj\Debug\net6.0\DZ2.csproj.CoreCompileInputs.cache
