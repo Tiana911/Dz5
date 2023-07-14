@@ -1,0 +1,15 @@
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.csproj.AssemblyReference.cache
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.AssemblyInfoInputs.cache
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.AssemblyInfo.cs
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.csproj.CoreCompileInputs.cache
+D:\Git\Dz7\bin\Debug\net6.0\Dz7.exe
+D:\Git\Dz7\bin\Debug\net6.0\Dz7.deps.json
+D:\Git\Dz7\bin\Debug\net6.0\Dz7.runtimeconfig.json
+D:\Git\Dz7\bin\Debug\net6.0\Dz7.dll
+D:\Git\Dz7\bin\Debug\net6.0\Dz7.pdb
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.dll
+D:\Git\Dz7\obj\Debug\net6.0\refint\Dz7.dll
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.pdb
+D:\Git\Dz7\obj\Debug\net6.0\Dz7.genruntimeconfig.cache
+D:\Git\Dz7\obj\Debug\net6.0\ref\Dz7.dll
