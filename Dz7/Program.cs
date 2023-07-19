@@ -48,46 +48,39 @@
 // 5 9 2 3
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
+Console.Write("Введите кол-во сток: ");
+int row = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите кол-во столбцов: ");
+int columns = Convert.ToInt32(Console.ReadLine());
+double[,] randomArray = new double[row,columns];
+Console.Write("Введите позицию строки: ");
+int m2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите позицию столбца: ");
+int n2 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("введите номер строки: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("введите номер столбца: ");
-int m = Convert.ToInt32(Console.ReadLine());
-int [,] numbers = new int [10,10];
-FillArrayRandomNumbers(numbers);
-
-if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
+if (m2<1 || n2<1)
 {
-    Console.WriteLine("Такого элемента НЕТ");
+    Console.Write("Позиции строк не могут быть отрицательными");
 }
-else
+else if (m2 <= row+1 && n2 <= columns+1)
 {
-    Console.WriteLine($"Значение элемента {n} строки и {m} столбца равно {numbers[n-1,m-1]}");
-}
-
-PrintArray(numbers);
-
-void FillArrayRandomNumbers(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-        {        
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                array [i,j] = new Random().Next(-100, 100)/10;
-            }   
-        }
+    Console.Write($"Значение элемента равно {randomArray[m2-1,n2-1]:F2} ");
+    else Console.Write("Такого элемента нет в массиве");
 }
 
-void PrintArray(int[,] array)
+void mas(int m, int n)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    int i,j;
+    Random rand = new Random();
+    for (i = 0; i < m; i++)
     {
-        Console.Write("[ ");
-        for (int j = 0; j < array.GetLength(1); j++)
+        Console.WriteLine();
+        for (j = 0; j < n; j++)
         {
-            Console.Write(array[i,j] + " ");
-        }   
-        Console.Write("]");
-        Console.WriteLine(""); 
-    }
+            randomArray[i,j] = rand.NextDouble();
+            Console.Write($"{randomArray[i,j]:F2} ");
+         }
+          Console.WriteLine();
+     }       
 }
+mas(row,columns);
