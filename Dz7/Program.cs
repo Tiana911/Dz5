@@ -48,39 +48,77 @@
 // 5 9 2 3
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
-Console.Write("Введите кол-во сток: ");
+
+// Console.Write("введите кол-во строк: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("введите кол-во столбцов: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// int [,] numbers = new int [n,m];
+// FillArrayRandomNumbers(numbers);
+
+// if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
+// {
+//     Console.WriteLine("такого элемента нет");
+// }
+// else
+// {
+//     Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {numbers[n-1,m-1]}");
+// }
+
+// PrintArray(numbers);
+
+// void FillArrayRandomNumbers(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//         {        
+//             for (int j = 0; j < array.GetLength(1); j++)
+//             {
+//                 array [i,j] = new Random().Next(-100, 100)/10;
+//             }   
+//         }
+// }
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j] + "\t");
+//         }   
+//         Console.WriteLine(""); 
+//     }
+// }
+
+
+// Задача 52. Задайте двумерный массив из целых чисел.
+// Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+
+Console.Write("введите кол-во строк: ");
 int row = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите кол-во столбцов: ");
+Console.Write("введите кол-во столбцов: ");
 int columns = Convert.ToInt32(Console.ReadLine());
-double[,] randomArray = new double[row,columns];
-Console.Write("Введите позицию строки: ");
-int m2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите позицию столбца: ");
-int n2 = Convert.ToInt32(Console.ReadLine());
+int[,] matrix = new int[row, columns];
 
-if (m2<1 || n2<1)
+for (int i = 0; i < matrix.GetLength(0); i++)
 {
-    Console.Write("Позиции строк не могут быть отрицательными");
-}
-else if (m2 <= row+1 && n2 <= columns+1)
-{
-    Console.Write($"Значение элемента равно {randomArray[m2-1,n2-1]:F2} ");
-    else Console.Write("Такого элемента нет в массиве");
-}
-
-void mas(int m, int n)
-{
-    int i,j;
-    Random rand = new Random();
-    for (i = 0; i < m; i++)
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        Console.WriteLine();
-        for (j = 0; j < n; j++)
-        {
-            randomArray[i,j] = rand.NextDouble();
-            Console.Write($"{randomArray[i,j]:F2} ");
-         }
-          Console.WriteLine();
-     }       
+        matrix[i,j] = new Random().Next(0,10);
+        Console.Write(matrix[i,j]+ "\t");
+    }  
+    Console.WriteLine();  
 }
-mas(row,columns);
+for (int i = 0; i < matrix.GetLength(0); i++)
+{
+    double sumRow = 0;
+    for (int j = 0; j < matrix.GetLength(1); j++)
+    {
+        sumRow += matrix[i,j];
+    }
+    Console.WriteLine($"Sum элементовв строчке {i} = {Math.Round(sumRow/matrix.GetLength(1), 2)}");
+}
