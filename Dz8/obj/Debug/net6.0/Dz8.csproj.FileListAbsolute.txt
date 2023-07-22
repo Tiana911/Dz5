@@ -1,0 +1,15 @@
+D:\Git\Dz8\bin\Debug\net6.0\Dz8.exe
+D:\Git\Dz8\bin\Debug\net6.0\Dz8.deps.json
+D:\Git\Dz8\bin\Debug\net6.0\Dz8.runtimeconfig.json
+D:\Git\Dz8\bin\Debug\net6.0\Dz8.dll
+D:\Git\Dz8\bin\Debug\net6.0\Dz8.pdb
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.csproj.AssemblyReference.cache
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.AssemblyInfoInputs.cache
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.AssemblyInfo.cs
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.csproj.CoreCompileInputs.cache
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.dll
+D:\Git\Dz8\obj\Debug\net6.0\refint\Dz8.dll
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.pdb
+D:\Git\Dz8\obj\Debug\net6.0\Dz8.genruntimeconfig.cache
+D:\Git\Dz8\obj\Debug\net6.0\ref\Dz8.dll
