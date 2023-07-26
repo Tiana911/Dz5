@@ -1,0 +1,15 @@
+D:\Git\Dz9(Atest)\bin\Debug\net6.0\Dz9(Atest).exe
+D:\Git\Dz9(Atest)\bin\Debug\net6.0\Dz9(Atest).deps.json
+D:\Git\Dz9(Atest)\bin\Debug\net6.0\Dz9(Atest).runtimeconfig.json
+D:\Git\Dz9(Atest)\bin\Debug\net6.0\Dz9(Atest).dll
+D:\Git\Dz9(Atest)\bin\Debug\net6.0\Dz9(Atest).pdb
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).csproj.AssemblyReference.cache
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).AssemblyInfoInputs.cache
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).AssemblyInfo.cs
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).csproj.CoreCompileInputs.cache
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).dll
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\refint\Dz9(Atest).dll
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).pdb
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\Dz9(Atest).genruntimeconfig.cache
+D:\Git\Dz9(Atest)\obj\Debug\net6.0\ref\Dz9(Atest).dll

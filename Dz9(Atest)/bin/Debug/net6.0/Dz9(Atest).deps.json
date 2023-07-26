@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Dz9(Atest)/1.0.0": {
+        "runtime": {
+          "Dz9(Atest).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dz9(Atest)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
