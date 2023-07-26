@@ -4,49 +4,42 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-// int n = InputInt("Введите положительное число: ");
-// int m = 1;
-// if (n < 1)
+// Console.Write("Введите число n: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// string PrintNumbers(int start, int end)
 // {
-//     Console.WriteLine("Ввели не положительное число");
+//     if (start==end) return start.ToString();
+//     return  end + ", " + PrintNumbers(start, end-1);
 // }
-// Console.WriteLine(NaturalNumber(n, m));
-
-// int NaturalNumber(int n, int m)
-// {
-//     if (n == m)
-//         return n;
-//     else
-//         Console.Write($"{NaturalNumber(n, m + 1)}, ");
-//     return m;
-// }
-
-// int InputInt(string output)
-// {
-//     Console.Write(output);
-//     return int.Parse(Console.ReadLine());
-// }
+// Console.WriteLine($"Числа от {n} до 1: {PrintNumbers(1 ,n)}");
 
 // Задача 66: Задайте значения M и N. 
 // Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-int m = InputInt("Введите M: ");
-int n = InputInt("Введите N: ");
-Console.WriteLine($"Сумма элементов от {m} до {n} = {CountNaturalSum(m, n)}");
+Console.Write("Введите число M: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число N: ");
+int n = Convert.ToInt32(Console.ReadLine());
 
-int InputInt(string output)
+SumFromMToN(m, n);
+
+void SumFromMToN(int m, int n)
 {
-    Console.Write(output);
-    return int.Parse(Console.ReadLine());
+    Console.Write(SumMN(m - 1, n));
 }
-
-int CountNaturalSum(int m, int n)
+int SumMN(int m, int n)
 {
+    int res = m;
     if (m == n)
-        return n;
-    return n + CountNaturalSum(m, n - 1);
+        return 0;
+    else
+    {
+        m++;
+        res = m + SumMN(m, n);
+        return res;
+    }
 }
 
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. 
@@ -54,23 +47,29 @@ int CountNaturalSum(int m, int n)
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
-// Console.WriteLine("Введите два положительных числа: M и N.");
-// int m = InputInt("Введите M: ");
-// int n = InputInt("Введите N: ");
-// Console.WriteLine($"A({m}, {n}) = {Akkerman(m, n)}");
+Console.Write("Введите число M: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число N: ");
+int n = Convert.ToInt32(Console.ReadLine());
 
-// int InputInt(string output)
-// {
-//     Console.Write(output);
-//     return int.Parse(Console.ReadLine());
-// }
+AkkermanFunction(m,n);
 
-// int Akkerman(int m, int n)
-// {
-//     if (m == 0)
-//         return n + 1;
-//     if (m > 0 && n == 0)
-//         return Akkerman(m - 1, 1);
-//     else
-//         return Akkerman(m - 1, Akkerman(m, n - 1));
-// }
+void AkkermanFunction(int m, int n)
+{
+    Console.Write(Akkerman(m, n)); 
+}
+int Akkerman(int m, int n)
+{
+    if (m == 0)
+    {
+        return n + 1;
+    }
+    else if (n == 0 && m > 0)
+    {
+        return Akkerman(m - 1, 1);
+    }
+    else
+    {
+        return (Akkerman(m - 1, Akkerman(m, n - 1)));
+    }
+}
